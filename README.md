@@ -20,7 +20,7 @@ t.datetime :confirmed_at
 t.datetime :confirmation_sent_at
 t.string :unconfirmed_email
 Pull up the user.rb model file under app/models and in the line for devise, add in a:
-:confirmable,
+":confirmable,"
 after :registerable, entry
 Run your migration now to create the users table:
 ```
