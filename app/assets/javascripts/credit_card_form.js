@@ -32,6 +32,7 @@ $form.get(0).submit();
 return false;
 };
 show_error = function (message) {
+  alert(message);
 if($("#flash-messages").size() < 1){
 $('div.container.main div:first').prepend("<div id='flash-messages'></div>")
 }
