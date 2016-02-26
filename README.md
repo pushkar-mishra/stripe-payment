@@ -62,6 +62,7 @@ Rails.configuration.stripe = {
 }
 Stripe.api_key = Rails.configuration.stripe[:secret_key]
 ```
+
 Open your .bashrc file and fill in
 ```
 export STRIPE_TEST_SECRET_KEY=yoursecrettestkeyfromstripe
@@ -74,6 +75,13 @@ source ~/.bashrc
 heroku config:set STRIPE_TEST_SECRET_KEY=$STRIPE_TEST_SECRET_KEY
 heroku config:set STRIPE_TEST_PUBLISHABLE_KEY=$STRIPE_TEST_PUBLISHABLE_KEY
 ```
+
+For Testing use: 
+card no: 378282246310005
+CVV: 111
+Exp Date: 1-JAN-2017
+
+
 
 
 

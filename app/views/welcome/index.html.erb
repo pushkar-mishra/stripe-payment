@@ -7,41 +7,60 @@
 You'll love playing with our application. Sign up!
 </p>
 </div>
-<div class="row">
-<div class="plans clearfix">
-<div class="col-lg-3 col-lg-offset-3 plan">
-<h2>Premium Plan</h2>
-<div class="price pull-right">
-Price: $10
-</div>
-<div class="features">
-<ul>
-<li>Unlimited Image Uploads</li>
-<li>Responsive design</li>
-<li>Access anywhere</li>
-</ul>
-</div>
-<p>
-<%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-primary sign-up' %>
-</p>
-</div>
-<div class="col-lg-3 plan">
-<h2>Amaze Plan</h2>
-<div class="price pull-right">
-Price: $20
-</div>
-<div class="features">
-<ul>
-<li>Unlimited Image Uploads</li>
-<li>Responsive design</li>
-<li>Access anywhere</li>
-<li class='extra'>Unlimited projects</li>
-</ul>
-</div>
-<p>
-<%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-primary sign-up' %>
-</p>
-</div>
-</div>
-</div>
+
+<!-- Plans -->
+<section id="plans">
+    <div class="container">
+        <div class="row">
+
+            <!-- item -->
+            <div class="col-md-4 col-lg-offset-2 text-center">
+                <div class="panel panel-warning panel-pricing">
+                    <div class="panel-heading">
+                        <i class="fa fa-desktop"></i>
+                        <h3>Premium Plan</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <p><strong>$10 / Month</strong></p>
+                    </div>
+                    <ul class="list-group text-center">
+                        <li class="list-group-item"><i class="fa fa-check"></i> Personal use</li>
+                        <li class="list-group-item"><i class="fa fa-check"></i> Unlimited data</li>
+                        <li class="list-group-item"><i class="fa fa-check"></i> 27/7 support</li>
+                    </ul>
+                    <div class="panel-footer">
+                        <%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-lg btn-block btn-success' %>
+                    </div>
+                </div>
+            </div>
+            <!-- /item -->
+
+            <!-- item -->
+            <div class="col-md-4 text-center">
+                <div class="panel panel-success panel-pricing">
+                    <div class="panel-heading">
+                        <i class="fa fa-desktop"></i>
+                        <h3>Amaze Plan</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <p><strong>$20 / Month</strong></p>
+                    </div>
+                    <ul class="list-group text-center">
+                        <li class="list-group-item"><i class="fa fa-check"></i> Personal use</li>
+                        <li class="list-group-item"><i class="fa fa-check"></i> Unlimited news & data</li>
+                        <li class="list-group-item"><i class="fa fa-check"></i> 27/7 support</li>
+                    </ul>
+                    <div class="panel-footer">
+                        <<%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-lg btn-block btn-success' %>
+                    </div>
+                </div>
+            </div>
+            <!-- /item -->
+
+        </div>
+    </div>
+</section>
+<!-- /Plans -->
+
+
 <% end %>
